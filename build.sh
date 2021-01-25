@@ -32,8 +32,8 @@ set_version_variables()
 
 	# set precise commit in repo to use 
 	# you can set this to an alternate commit 
-	# or empty to checkout latest
-	openwrt_commit=""
+	# branch or empty to checkout latest
+	openwrt_commit="openwrt-18.06-mediatek"
 	openwrt_abbrev_commit=$( echo "$openwrt_commit" | cut -b 1-7 )
 	
 
