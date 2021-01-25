@@ -117,6 +117,7 @@ CONFIG_TARGET_ramips_mt7620_Default=y
 # CONFIG_TARGET_ramips_mt7620_DEVICE_zbt-wa05 is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_we1026-5g-16m is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_zbt-we2026 is not set
+# CONFIG_TARGET_ramips_mt7620_DEVICE_zbt-we826t2-16M is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_zbt-we826-16M is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_zbt-we826-32M is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_zbt-wr8305rt is not set

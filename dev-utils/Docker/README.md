@@ -14,7 +14,7 @@ Build tested:
 * Build Docker image:
 
 ```
-git clone https://github.com/ericpaulbishop/gargoyle.git
+git clone https://github.com/db260179/gargoyle.git
 cd gargoyle
 git checkout 1.12
 cd dev-utils/Docker
@@ -33,7 +33,7 @@ Note: If you don't use the cloned Gargoyle repo, you will need to clone it yours
 
 In the container console, enter the make command for the target you wish to compile e.g.:
 ```
-make FULL_BUILD=true ar71xx
+make FULL_BUILD=true ramips
 ```
 
 After the build, the images will be inside `~/gargoyle/images/` and the packages inside `~/gargoyle/built/`.
