@@ -252,8 +252,6 @@ my $targetOrder =
 		"nand-wndr3700v4-ubi-factory.img",
 		"nand-wndr4300-squashfs-sysupgrade.tar",
 		"nand-wndr4300-ubi-factory.img",
-
-
 		"alfa-ap96-kernel.bin",
 		"alfa-ap96-rootfs-squashfs.bin",
 		"all0258n-kernel.bin",
@@ -404,7 +402,6 @@ my $targetOrder =
 		"generic-vmlinux.lzma",
 		"generic-vmlinux-lzma.elf",
 		"root.squashfs-64k"
-		
 		],
 	"mvebu"=>
 		[ 
@@ -424,7 +421,6 @@ my $targetOrder =
 		"cortexa9-turris-omnia-initramfs.tar.gz",
 		"cortexa9-turris-omnia-kernel.bin",
 		"cortexa9-turris-omnia-initramfs-kernel.bin",
-
 		"linksys-caiman-squashfs-factory.img",
 		"linksys-caiman-squashfs-sysupgrade.tar",
 		"linksys-cobra-squashfs-factory.img",
@@ -435,8 +431,6 @@ my $targetOrder =
 		"linksys-rango-squashfs-sysupgrade.tar",
 		"linksys-shelby-squashfs-factory.img",
 		"linksys-shelby-squashfs-sysupgrade.tar"
-
-
 		],
 	"ramips"=>
 		[ 
@@ -533,7 +527,7 @@ my $targetOrder =
 		"mt7621-mir3g-squashfs-kernel1.bin",
 		"mt7621-mir3g-squashfs-rootfs0.bin",
 		"mt7621-mir3g-squashfs-sysupgrade.tar",
-		"mt7621-mir4ag-squashfs-sysupgrade.tar",
+		"mt7621-mir4ag-squashfs-sysupgrade.bin",
 		"mt7621-ubnt-erx-initramfs-kernel.bin",
 		"mt7621-ubnt-erx-sfp-initramfs-kernel.bin",
 		"mt7621-ubnt-erx-sfp-squashfs-sysupgrade.tar",
@@ -546,7 +540,6 @@ my $targetOrder =
 		"rt305x-vocore-8M-squashfs-sysupgrade.bin",
 		"rt305x-wt1520-8M-squashfs-factory.bin",
 		"rt305x-wt1520-8M-squashfs-sysupgrade.bin",
-
 		"wt3020-8M-squashfs-factory.bin",
 		"wt3020-8M-squashfs-sysupgrade.bin",
 		"xiaomi-miwifi-mini-squashfs-sysupgrade.bin",
@@ -557,9 +550,6 @@ my $targetOrder =
 		"vocore-squashfs-sysupgrade.bin",
 		"wt1520-8M-squashfs-factory.bin",
 		"wt1520-8M-squashfs-sysupgrade.bin"
-
-
-
 		],
 	"x86"=> 
 		[
@@ -701,7 +691,6 @@ foreach my $type (@$typeOrder)
 print "downloadData[\"DATA_ORDER\"] = [ " . join(",", @$typeNameOrder) . " ];\n";
 
 exit;
-
 
 sub sortFiles
 {
