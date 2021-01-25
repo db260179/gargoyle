@@ -26,14 +26,14 @@ set_version_variables()
 
 	#openwrt branch
 	branch_name="18.06"
-	branch_id="openwrt-18.06"
+	branch_id="openwrt-18.06-mediatek"
 	packages_branch="openwrt-18.06"
 
 
 	# set precise commit in repo to use 
 	# you can set this to an alternate commit 
 	# or empty to checkout latest
-	openwrt_commit="5625f5bc36954d644cb80adf8de47854c65d91c3"
+	openwrt_commit=""
 	openwrt_abbrev_commit=$( echo "$openwrt_commit" | cut -b 1-7 )
 	
 
@@ -486,7 +486,7 @@ if [ ! -d "$openwrt_src_dir" ] ; then
 	echo "fetching openwrt source"
 	rm -rf "$branch_name" "$branch_id"
 
-	git clone  https://github.com/openwrt/openwrt.git "$openwrt_src_dir"
+	git clone  https://github.com/db260179/openwrt.git "$openwrt_src_dir"
 
 	if [ ! -d "$openwrt_src_dir" ] ; then
 		echo "ERROR: could not download source, exiting"
